@@ -1,0 +1,30 @@
+
+body {
+    background-color: lightgreen;
+}
+
+* {
+    font-family:  sans-serif;
+    color: black;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    background-color: hotpink;
+    border: none;
+    border-radius: 10px;
+    transition: ease-in 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color:lightseagreen;
+}
+
