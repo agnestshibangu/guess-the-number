@@ -15,29 +15,23 @@
 
     <?php
     
-
-
     $num = $_POST['num_ent'];
 
     $sub = $_POST['sub'];
 
     $rand = rand(1,10);
 
-
-
-  
-
     ?>
 
     <form action="" method="POST">
     Guess a number between 1 and 10 : 
-    <input type="text" name="num_ent" value="">
-    <input class="btn" type="submit" name="sub" value="submit">
+        <input type="text" name="num_ent" value="">
+        <input class="btn" type="submit" name="sub" value="submit">
     </form>
 
     </br>
 
-    My number :
+   
 
     <?php  
 
@@ -45,20 +39,18 @@
 
     if($num != $rand) {
         if ($num >= $rand){
-            echo  $rand . "</br></br>guess too high, try again !";
+            echo "Your number : " . $num . "</br></br> My number : " . $rand . "</br></br>guess too high, try again !";
         } elseif ($num <= $rand) {
-            echo $rand . "</br></br>guess too low, try again !";
+            echo "Your number : " . $num . "</br></br> My number : " . $rand . "</br></br>guess too low, try again !";
         }
     }else {
        
-        echo "my num:" . $rand . "</br>your num:" . $num;
-        echo "</br>GOOD JOB !";
+        echo "my number : " . $rand . "</br></br>your number : " . $num;
+        echo "</br></br>GOOD JOB !";
     }
 
     }
     ?>
-
-  
 
 
     </div>
